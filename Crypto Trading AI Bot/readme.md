@@ -26,12 +26,12 @@ graph TD
     Start[Market Data Input] --> InPosition{Currently Holding?}
 
     InPosition -->|No| EntryCheck{Uptrend AND RSI 40-60 AND Positive News?}
-    EntryCheck -->|Yes| Buy[BUY] 
-    EntryCheck -->|No| Sell1[SELL (Stay in Cash)]
+    EntryCheck -->|Yes| Buy[BUY]
+    EntryCheck -->|No| Sell1[SELL - Stay in Cash]
 
     InPosition -->|Yes| ExitCheck{StopLoss OR TakeProfit OR TrendReversal OR RSI>70 OR Negative News?}
     ExitCheck -->|Yes| Sell2[SELL]
-    ExitCheck -->|No| BuyHold[BUY (Keep Position)]
+    ExitCheck -->|No| BuyHold[BUY - Keep Position]
 ```
 
 ### Performance Analysis
