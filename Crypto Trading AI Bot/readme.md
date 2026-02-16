@@ -14,8 +14,8 @@ Our strategy follows a conservative trend-following approach with news confirmat
    - RSI is in a neutral zone: 40 <= RSI <= 60
    - News sentiment is strongly positive: POSITIVE and sentiment_score > 0.8
 2. **Exit Condition (Sell):** When any of the following risk signals appears:
-   - Stop-loss: price drops more than 4%: change ≥ +7%
-   - Take-profit: price increases more than 7%: change ≥ +7%
+   - Stop-loss: price drops more than 4%: change <= -4%
+   - Take-profit: price increases more than 7%: change >= +7%
    - Trend reversal: ma7 < ma20
    - RSI becomes overbought: RSI > 70
    - Strong negative news: NEGATIVE and sentiment_score > 0.75
